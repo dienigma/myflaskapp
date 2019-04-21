@@ -1,7 +1,11 @@
 {% extends 'layout.html' %}
 {% block body %}
 <div class="jumbotron text-center">
-  <h1>Welcome to Flask App</h1>
-  <p>This application is built on the Python Flask framework</p>
+  <h1>Articles</h1>
 </div>
+{% for article in articles %}
+
+{{article.title}}
+
+{% endfor %}
 {% endblock %}
